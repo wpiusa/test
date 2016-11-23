@@ -1,0 +1,24 @@
+angular.module('myApp', [])
+
+angular.module('myApp', [])
+        .constant('VERSION', 1.1);
+
+angular.module('myApp', [])
+    .constant('VERSION', 1.1)
+    .run(function(VERSION) {
+        ...
+    });
+
+
+    run(function(VERSION, $rootScope) {
+       $rootScope.version = VERSION;
+   });
+
+
+angular.module('myApp', [])
+    .constant('VERSION', 1.1)
+    .controller('MyCtrl', function(VERSION, $scope) {
+        $scope.version = VERSION;
+    });
+
+ If you navigate to that project folder from the command line you can create the branch with git checkout -b add-a-controller.
